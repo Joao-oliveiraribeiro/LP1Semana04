@@ -8,4 +8,12 @@ class BetterDecorador
         return $"{decoration} {s} {decoration}";
     }
 
- 
+    static void Main(string[] args)
+    {
+        string inputString = args[0];
+        char decoratorChar = args[1][0];
+        int count = int.Parse(args[2]);
+
+
+    }
+}
