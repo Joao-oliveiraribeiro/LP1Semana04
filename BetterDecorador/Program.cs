@@ -20,6 +20,10 @@ class Program
         return $"{decoration} {s} {decoration}";
     }
 
+    /// <summary>
+    /// If user doesnt specify args calls this method and returns a predifined string
+    /// </summary>
+    /// <returns> A predifined string  </returns>
     private static string Decor()
     {
         return Decor("User did not specify args!", '=', 3);
