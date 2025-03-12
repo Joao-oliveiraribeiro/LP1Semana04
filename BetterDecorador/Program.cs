@@ -16,6 +16,10 @@ class BetterDecorador
         return $"{decoration} {s} {decoration}";
     }
 
+    /// <summary>
+    /// Get input arguments in console call Decor function and write in console
+    /// </summary>
+    /// <param name="args"> string, character, int </param>
     static void Main(string[] args)
     {
         string inputString = args[0];
