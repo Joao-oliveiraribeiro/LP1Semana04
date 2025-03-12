@@ -1,5 +1,9 @@
 ﻿using System;
 
+/// <summary>
+/// Code to input a string a character and a number and put the inputed character 
+/// in both sides of the string the number of times specified by the user
+/// </summary>
 class BetterDecorador
 {   
     /// <summary>
