@@ -14,6 +14,7 @@ class BetterDecorador
         char decoratorChar = args[1][0];
         int count = int.Parse(args[2]);
 
-
+        string result = Decor(inputString, decoratorChar, count);
+        Console.WriteLine(result);
     }
 }
