@@ -21,7 +21,7 @@ class Program
     }
 
     /// <summary>
-    /// Get input arguments in console call Decor function and write in console
+    /// Get input arguments in console call Decor method and write in console
     /// </summary>
     /// <param name="args"> string, character, int </param>
     static void Main(string[] args)
