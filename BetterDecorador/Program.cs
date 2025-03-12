@@ -4,7 +4,7 @@
 /// Code to input a string a character and a number and put the inputed character 
 /// in both sides of the string the number of times specified by the user
 /// </summary>
-class BetterDecorador
+class Program
 {   
     /// <summary>
     /// Get numbers convert into a string 
@@ -27,7 +27,7 @@ class BetterDecorador
     static void Main(string[] args)
     {
         string inputString = args[0];
-        char decoratorChar = args[1][0];
+        char decoratorChar = char.Parse(args[1]);
         int count = int.Parse(args[2]);
 
         string result = Decor(inputString, decoratorChar, count);
