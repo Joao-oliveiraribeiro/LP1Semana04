@@ -20,17 +20,30 @@ class Program
         return $"{decoration} {s} {decoration}";
     }
 
+    private static string Decor()
+    {
+        return Decor("User did not specify args!", '=', 3);
+    }
+
     /// <summary>
     /// Get input arguments in console call Decor method and write in console
     /// </summary>
     /// <param name="args"> string, character, int </param>
     static void Main(string[] args)
     {
-        string inputString = args[0];
-        char decoratorChar = char.Parse(args[1]);
-        int count = int.Parse(args[2]);
+        if (args.Length ==0)
+        {
+            string result = Decor();
+            Console.WriteLine(result);   
+        }
 
-        string result = Decor(inputString, decoratorChar, count);
-        Console.WriteLine(result);
+        else
+        {
+            string inputString = args[0];
+            char decoratorChar = char.Parse(args[1]);
+            int count = int.Parse(args[2]);
+            string result = Decor(inputString, decoratorChar, count);
+            Console.WriteLine(result);  
+        }
     }
 }
